@@ -1,0 +1,15 @@
+﻿<h2>Test Ajax</h2>
+<div id="result"></div>
+
+<script>
+    fetch('/Employees/GetEmployeesAjax')
+        .then(res => res.json())
+        .then(data => {
+            let html = '<ul>';
+            data.forEach(e => {
+                html += `<li>${e.firstName} ${e.lastName} - ${e.salary}</li>`;
+            });
+            html += '</ul>';
+            document.getElementById('result').innerHTML = html;
+        });
+</script>

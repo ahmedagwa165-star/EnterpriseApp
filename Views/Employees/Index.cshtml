@@ -1,0 +1,7 @@
+﻿@model List<EnterpriseApp.Models.Employee>
+
+<h2>Employees</h2>
+@foreach (var emp in Model)
+{
+    @await Html.PartialAsync("_EmployeeCard", emp)
+}

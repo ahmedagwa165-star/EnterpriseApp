@@ -1,0 +1,7 @@
+﻿@model EnterpriseApp.ViewComponents.CompanyDataVM
+
+<div class="company-stats bg-dark text-white p-2 d-flex justify-content-around">
+    <span>Total Employees: @Model.TotalEmployees</span>
+    <span>Total Departments: @Model.TotalDepartments</span>
+    <span>Average Salary: @Model.AverageSalary.ToString("C")</span>
+</div>

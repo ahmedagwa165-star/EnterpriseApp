@@ -1,0 +1,7 @@
+﻿@model EnterpriseApp.Models.Employee
+
+<div class="card mb-2 p-2">
+    <h5>@Model.FirstName @Model.LastName</h5>
+    <p>Salary: @Model.Salary.ToString("C")</p>
+    <p>Department: @Model.Department?.Name</p>
+</div>
